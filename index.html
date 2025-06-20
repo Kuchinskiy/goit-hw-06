@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wdth,wght@75..100,100..900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 	<link rel="stylesheet" href="./css/styles.css">
-	<title>GOIT-HW-05</title>
+	<title>GOIT-HW-06</title>
 
 	<script src="./js/modal.js" defer></script>
 </head>
@@ -33,12 +33,18 @@
 					<li><a class="contact-link header-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
 				</ul>
 			</address>
+
+			<button class="burger-btn" type="button">
+				<svg class="burger-icon" width="24" height="24">
+					<use href="./images/icons.svg#icon-burger_menu"></use>
+				</svg>
+			</button>
 		</div>
 	</header>
 
 	<main>
 		<!-- Section#1 Hero -->
-		<section class="section-hero">
+		<section class="section-hero hidden">
 			<div class="container">
 					<h1 class="hero-title">Effective Solutions <br> for Your Business</h1>
 					<button class="button" type="button" data-modal-open>Order Service</button>
@@ -46,7 +52,7 @@
 		</section>
 
 		<!-- Section#2 Our Advantages-->
-		<section class="section">
+		<section class="section hidden">
 			<div class="container">
 				<h2 class="section-title visually-hidden">Our advantages</h2>
 				<ul class="list">
@@ -94,7 +100,7 @@
 		</section>
 
 		<!-- Section#3 Our Team-->
-		<section class="section section-team">
+		<section class="section section-team hidden">
 			<div class="container">
 				<h2 class="section-title">Our team</h2>
 					<ul class="list">
@@ -226,7 +232,7 @@
 		</section>
 
 		<!-- Section#4 Our Portfolio-->
-		<section class="section">
+		<section class="section hidden">
 			<div class="container">
 				<h2 class="section-title">Our portfolio</h2>
 				<ul class="items">
@@ -300,7 +306,7 @@
 		</section>
 	</main>
 
-	<footer class="footer">
+	<footer class="footer hidden">
 		<div class="container footer-box">
 			<div class="inner-box">
 				<a class="logo-footer" href="/">Web<span class="logo-part-two">Studio</span></a>
@@ -350,7 +356,7 @@
 	</footer>
 
 	<!-- Modal window -->
-	<div class="modal-overlay" data-modal>
+	<div class="modal-overlay hidden" data-modal>
 		<div class="modal">
 			<button class="modal-btn-close" type="button" data-modal-close>
 				<svg class="modal-icon-close" width="8" height="8" aria-hidden="true">
