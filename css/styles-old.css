@@ -139,17 +139,17 @@
 /* Section#2 Our Advantages
 subtitle & desc-info <<-- for #2, #3, #4 sections*/
 
-.list {
+/* .list {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 24px;
-}
+} */
 
-.list .item {
+/* .list .item {
 	width: calc((100% - 72px) / 4);
-}
+} */
 
-.icon-box {
+/* .icon-box {
 	height: 112px;
 	display: flex;
 	align-items: center;
@@ -160,9 +160,9 @@ subtitle & desc-info <<-- for #2, #3, #4 sections*/
 	border-radius: 4px;
 	border: 1px solid #8e8f99;
 	background-color: #f4f4fd;
-}
+} */
 
-.subtitle {
+/* .subtitle {
 	color: #2e2f42;
 	font-size: 20px;
 	font-weight: 500;
@@ -170,14 +170,14 @@ subtitle & desc-info <<-- for #2, #3, #4 sections*/
 	letter-spacing: 0.02em;
 
 	margin-bottom: 8px;
-}
+} */
 
-.desc-info {
+/* .desc-info {
 	color: #434455;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
-}
+} */
 
 /* Section#3 Our Team
 section-title <<-- for #3, #4 sections*/
