@@ -76,7 +76,7 @@
 
 /* Section#1 Hero */
 
-.section-hero {
+/* .section-hero {
 	max-width: 1440px;
 	margin: 0 auto;
 	padding-top: 188px;
@@ -90,9 +90,9 @@
 	rgba(46, 47, 66, 0.7),
 	rgba(46, 47, 66, 0.7)),
 	url(../images/banner-office_sq.jpg);
-}
+} */
 
-.hero-title {
+/* .hero-title {
 	color: #ffffff;
 	font-size: 56px;
 	line-height: 1.07;
@@ -103,9 +103,9 @@
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 48px;
-}
+} */
 
-.button,
+/* .button,
 .form-button,
 .modal-btn-send {
 	height: 56px;
@@ -129,12 +129,12 @@
 	transition-duration: 250ms;
 	transition-property: background-color;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.button:hover,
+/* .button:hover,
 .button:focus {
 	background-color: #404bbf;
-}
+} */
 
 /* Section#2 Our Advantages
 subtitle & desc-info <<-- for #2, #3, #4 sections*/
