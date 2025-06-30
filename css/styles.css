@@ -413,29 +413,41 @@ input[type="radio"].visually-hidden {
 	letter-spacing: 0.02em;
 }
 
-.list .item {
-	margin-bottom: 72px;
+@media screen and (min-width: 1158px) {
+	.item .subtitle {
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 1.2;
+		text-align: left;
+	}
+
+	.desc-info {
+		font-weight: 400;
+	}
 }
 
-.list .item:last-child {
-	margin-bottom: 0;
+.list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 72px;
 }
 
 @media screen and (min-width: 768px) {
 	.list {
 		display: flex;
+		flex-direction: row;
 		flex-wrap: wrap;
 		column-gap: 24px;
 		align-items: center;
 		justify-content: center;
 	}
 
-	.list .item {
-		width: calc((100% - 24px) / 2);
+	.list-cards {
+		row-gap: 64px;
 	}
 
-	.list .item:nth-last-child(-n + 2) {
-		margin-bottom: 0;
+	.list .item {
+		width: calc((100% - 24px) / 2);
 	}
 }
 
@@ -445,7 +457,8 @@ input[type="radio"].visually-hidden {
 		padding-bottom: 120px;
 	}
 
-	.list .item {
+	.list .item,
+	.list-cards .item-card {
 		width: calc((100% - 72px) / 4);
 	}
 
@@ -482,18 +495,8 @@ input[type="radio"].visually-hidden {
 
 @media screen and (max-width: 767px) {
 	.list-cards {
-		display: flex;
-		row-gap: 72px;
-		flex-direction: column;
-
 		margin: 0 auto;
 		max-width: 264px;
-	}
-}
-
-@media screen and (min-width: 768px) and (max-width: 1157px) {
-	.list {
-		row-gap: 64px;
 	}
 }
 
@@ -558,3 +561,45 @@ input[type="radio"].visually-hidden {
 
 /* Section#4 Our Portfolio */
 
+.items {
+	display: flex;
+	row-gap: 48px;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+	/* .gallery-item {
+	cursor: pointer;
+	width: calc((100% - 24px) / 2);
+
+	transition-duration: 250ms;
+	transition-property: box-shadow;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
+
+	/* .items {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		column-gap: 24px;
+		row-gap: 72px;
+	} */
+	
+
+}
+
+.gallery-text {
+	display: none;
+}
+
+.gallery-thumb {
+	padding: 32px 16px;
+	border-bottom: 1px solid #e7e9fc;
+	border-right: 1px solid #e7e9fc;
+	border-left: 1px solid #e7e9fc;
+}
+
+.gallery-thumb .subtitle-card {
+	text-align: left;
+}
