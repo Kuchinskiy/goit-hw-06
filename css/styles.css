@@ -397,11 +397,11 @@ input[type="radio"].visually-hidden {
 }
 
 .subtitle {
-	color: #2e2f42;
 	font-size: 36px;
+	color: #2e2f42;
 	line-height: 1.11;
+	text-align: center;
 	letter-spacing: 0.02em;
-
 	margin-bottom: 8px;
 }
 
@@ -425,7 +425,9 @@ input[type="radio"].visually-hidden {
 	.list {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		column-gap: 24px;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.list .item {
@@ -459,17 +461,100 @@ input[type="radio"].visually-hidden {
 		border: 1px solid #8e8f99;
 		background-color: #f4f4fd;
 	}
-
-	.subtitle {
-		font-size: 20px;
-		font-weight: 500;
-		line-height: 1.2;
-	}
-
-	.desc-info {
-		font-weight: 400;
-	}
 }
 
 /* Section#3 Our Team */
+
+.section-team {
+	background-color: #f4f4fd;
+}
+
+.section-title {
+	color: #2e2f42;
+	font-size: 36px;
+	line-height: 1.11;
+	text-align: center;
+	letter-spacing: 0.02em;
+	text-transform: capitalize;
+
+	margin-bottom: 72px;
+}
+
+@media screen and (max-width: 767px) {
+	.list-cards {
+		display: flex;
+		row-gap: 72px;
+		flex-direction: column;
+
+		margin: 0 auto;
+		max-width: 264px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+	.list {
+		row-gap: 64px;
+	}
+}
+
+.item-card {
+	border-radius: 0 0 4px 4px;
+	background-color: #ffffff;
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+	0px 1px 1px rgba(46, 47, 66, 0.16),
+	0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.card-box {
+	text-align: center;
+	padding: 32px 0;
+}
+
+.subtitle-card {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+.desc-card {
+	font-weight: 400;
+	margin-bottom: 8px;
+}
+
+.social-list {
+	gap: 24px;
+	display: flex;
+	justify-content: center;
+}
+
+.social-item {
+	width: 40px;
+	height: 40px;
+}
+
+.social-link {
+	width: 100%;
+	height: 100%;
+
+	border-radius: 50%;
+	background-color: #4d5ae5;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	transition-duration: 250ms;
+	transition-property: background-color;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list .social-icon {
+	fill: var(--icon-social-text-color);
+}
+
+.social-list .social-link:is(:focus, :hover) {
+	background-color: #404bbf;
+}
+
+/* Section#4 Our Portfolio */
 

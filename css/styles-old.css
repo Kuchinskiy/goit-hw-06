@@ -182,11 +182,11 @@ subtitle & desc-info <<-- for #2, #3, #4 sections*/
 /* Section#3 Our Team
 section-title <<-- for #3, #4 sections*/
 
-.section-team {
+/* .section-team {
 	background-color: #f4f4fd;
-}
+} */
 
-.section-title {
+/* .section-title {
 	color: #2e2f42;
 	font-size: 36px;
 	line-height: 1.11;
@@ -195,37 +195,37 @@ section-title <<-- for #3, #4 sections*/
 	text-transform: capitalize;
 
 	margin-bottom: 72px;
-}
+} */
 
-.item-card {
+/* .item-card {
 	border-radius: 0 0 4px 4px;
 	background-color: #ffffff;
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 	0px 1px 1px rgba(46, 47, 66, 0.16),
 	0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+} */
 
-.card-box {
+/* .card-box {
 	text-align: center;
 	padding: 32px 0;
-}
+} */
 
-.desc-card {
+/* .desc-card {
 	margin-bottom: 8px;
-}
+} */
 
-.social-list {
+/* .social-list {
 	gap: 24px;
 	display: flex;
 	justify-content: center;
-}
+} */
 
-.social-item {
+/* .social-item {
 	width: 40px;
 	height: 40px;
-}
+} */
 
-.social-link {
+/* .social-link {
 	width: 100%;
 	height: 100%;
 
@@ -239,15 +239,15 @@ section-title <<-- for #3, #4 sections*/
 	transition-duration: 250ms;
 	transition-property: background-color;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.social-list .social-link:is(:focus, :hover) {
+/* .social-list .social-link:is(:focus, :hover) {
 	background-color: #404bbf;
-}
+} */
 
-.social-list .social-icon {
+/* .social-list .social-icon {
 	fill: var(--icon-social-text-color);
-}
+} */
 
 /* Section#4 Our Portfolio */
 
