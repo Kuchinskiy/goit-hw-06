@@ -52,7 +52,8 @@ button {
 	padding-bottom: 24px;
 } */
 
-.section {
+.section,
+.footer {
 	padding-top: 96px;
 	padding-bottom: 96px;
 }
@@ -648,3 +649,132 @@ input[type="radio"].visually-hidden {
 
 /* Footer */
 
+.footer {
+	background-color:  #2e2f42;
+}
+
+.footer-box {
+	display: flex;
+	row-gap: 72px;
+	flex-direction: column;
+}
+
+.inner-box,
+.social-media,
+.subscribe-text {
+	text-align: center;
+}
+
+.logo-footer {
+	padding: 0;
+	margin-bottom: 16px;
+}
+
+.footer .logo-part-two,
+.footer .text-info {
+	color: #f4f4fd;
+}
+
+.text-info {
+	text-align: left;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+
+.footer .form-input {
+	color: #ffffff;
+	width: 100%;
+	height: 40px;
+
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 0.04em;
+
+	padding: 8px 16px;
+	margin-bottom: 16px;
+
+	opacity: 0.3;
+	border-radius: 4px;
+	border: 1px solid #ffffff;
+	background-color: transparent;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.footer .form-input::placeholder {
+	opacity: 0.6;
+	color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+	.footer-box {
+		flex-wrap: wrap;
+		column-gap: 24px;
+		flex-direction: row;
+		align-items: baseline;
+		padding-left: 92px;
+	}
+
+	.inner-box {
+		max-width: 264px;
+	}
+
+	.social-box {
+		max-width: 208px;
+	}
+
+	.form-box {
+		max-width: 453px;
+	}
+
+	.form {
+		gap: 24px;
+		display: flex;
+	}
+
+	.inner-box,
+	.social-media,
+	.subscribe-text {
+		text-align: left;
+	}
+
+	.footer .form-input {
+		margin-bottom: 0;
+		width: 264px;
+	}
+
+	.footer-elem {
+		flex-basis: calc((100% - 24px) / 2);
+	}
+}
+
+.social-media,
+.subscribe-text {
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	margin-bottom: 16px;
+}
+
+.footer .social-list {
+	gap: 16px;
+}
+
+.footer .form-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 40px;
+	min-width: 165px;
+
+	padding: 8px 24px;
+	box-shadow: none;
+}
+
+.footer .button-icon {
+	fill: currentColor;
+	display: inline-block;
+	margin-left: 16px;
+}
