@@ -414,10 +414,14 @@ input[type="radio"].visually-hidden {
 	letter-spacing: 0.02em;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: 768px) {
 	.list {
 		column-gap: 24px;
 		justify-content: center;
+	}
+
+	.subtitle-left {
+		text-align: left;
 	}
 
 	.list-cards {
@@ -456,11 +460,10 @@ input[type="radio"].visually-hidden {
 		background-color: #f4f4fd;
 	}
 
-	.item .subtitle {
+	.subtitle {
 		font-size: 20px;
 		font-weight: 500;
 		line-height: 1.2;
-		text-align: left;
 	}
 
 	.desc-info {
