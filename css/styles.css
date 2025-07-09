@@ -528,6 +528,7 @@ input[type="radio"].visually-hidden {
 .social-item {
 	width: 40px;
 	height: 40px;
+	flex-shrink: 0;
 }
 
 .social-link {
@@ -810,11 +811,15 @@ input[type="radio"].visually-hidden {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #fff;
+	background-color: rgba(0, 0, 0, 0.5);
 
 	opacity: 0;
 	visibility: hidden;
 	pointer-events: none;
+
+	/* Animation */
+	transition: opacity 250ms linear, visibility 350ms linear;
+
 }
 
 .mobile-menu.is-open {
@@ -831,7 +836,18 @@ input[type="radio"].visually-hidden {
 
 	display: flex;
 	flex-direction: column;
+}
+
+/* Animation - menu mobile */
+.mobile-menu .mobile-menu-container {
 	height: 100%;
+	background-color: #fff;
+	transform: translateX(-100%);
+	transition: transform 250ms linear 350ms;
+}
+
+.mobile-menu.is-open .mobile-menu-container {
+	transform: translateX(0);
 }
 
 .nav-menu-mobile {
