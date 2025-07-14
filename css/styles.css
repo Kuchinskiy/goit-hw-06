@@ -706,10 +706,10 @@ input[type="radio"].visually-hidden {
 
 @media screen and (min-width: 768px) {
 	.footer-box {
+		width: 584px;
 		column-gap: 24px;
 		flex-direction: row;
 		align-items: baseline;
-		padding-left: 108px;
 	}
 
 	.inner-box {
@@ -748,8 +748,8 @@ input[type="radio"].visually-hidden {
 	}
 
 	.footer-box {
+		width: 100%;
 		column-gap: 0;
-		padding-left: 15px;
 		justify-content: space-between;
 	}
 
